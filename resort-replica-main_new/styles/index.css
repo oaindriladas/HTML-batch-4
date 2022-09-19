@@ -1,0 +1,129 @@
+header {
+    width: 90%;
+    position: absolute;
+    margin: 1rem 5%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    z-index: 120;
+}
+
+#hero {
+    background-image: url('./../assets/images/hero.jpg');
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.title-container {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+    z-index: 99;
+    position: relative;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.subtitle {
+    font-size: 40px;
+}
+
+.about, 
+.daily,
+.experiences,
+.amenities {
+    padding: 1.5rem 5%;
+}
+
+.about {
+    padding: 1.5rem 5%;
+    background: #f1f1f1;
+}
+
+.icons-desc {
+    display: flex;
+}
+
+.icon-item-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 16%;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+.icon-item-container:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0px;
+    width: 1px;
+    height: 100%;
+    background: #e0e0e0;
+    transform: rotate(13deg);
+}
+
+.amenities > .icons-desc > .icon-item-container:nth-child(4n)::after {
+    content: '';
+    background: none;
+}
+
+
+.thumbnail-desc {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.thumbnail-container {
+    height: 300px;
+    width: 22%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.thumbnail-container p {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    bottom: 2rem;
+    left: 1rem;
+    font-size: 24px;
+}
+
+.thumbnail-container .overlay {
+    opacity: .4;
+}
+
+.thumbnail-container:nth-child(1) { background-image: url('./../assets/images/Gym\ Pool.jpg'); }
+.thumbnail-container:nth-child(2) { background-image: url('./../assets/images/Cooking\ with\ chef.jpg'); }
+.thumbnail-container:nth-child(3) { background-image: url('./../assets/images/Lazy\ River.jpg'); }
+.thumbnail-container:nth-child(4) { background-image: url('./../assets/images/Candlelight\ Dinner.jpg'); }
+.thumbnail-container:nth-child(5) { background-image: url('./../assets/images/Carnival.jpg'); }
+
+.amenities > .icons-desc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+}
+
+.amenities > .icons-desc > .icon-item-container {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.amenities > .icons-desc > .icon-item-container > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+}

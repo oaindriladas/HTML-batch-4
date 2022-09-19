@@ -1,0 +1,51 @@
+header {
+    background-color: black;
+    display: flex;
+    padding: 1rem 5%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.inquiry {
+    padding: 1.5rem 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    height: 2rem;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.permit {
+    display: flex;
+    align-items: center;
+}
+
+.permit input {
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-btn {
+    height: 60px;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(152,188,63,1) 0%, rgba(19,160,203,1) 100%);
+    color: white;
+    font-size: 24px;
+    border: none;
+}
