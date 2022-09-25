@@ -1,0 +1,83 @@
+<html>
+<head><title>Javascript</title>
+<style>
+    p{height: 50px; background-color:aquamarine;}
+</style>
+</head>
+<body>
+  <h1>Welcome to JavaScript!</h1>  
+<p id="p1"></p>
+  <script>
+    alert("Welcome to the page!");
+    console.log("Debugging here!");
+    document.write("<h2>Document write displays content here.</h2>");
+    var a;
+    a=5;
+    console.log('First value of a is: '+a);
+let b;
+b=10;
+console.log("Value of b is: "+b);
+b=20;
+console.log("b is: "+b);
+var a="Vaibhav"; //re-declare works but re-initialise doesnt work
+console.log('Second value of a is: '+a);
+const c=30; //re-initialise & re-declare do not work
+console.log("value of constant: "+c);
+document.getElementById('p1').innerHTML="Oaindrila";
+var name = new String("Oaindrila"); //string is an inbuilt class in JS, object
+var firstname = "Rahul"; // basic data type
+console.log(name);
+let num = 90; //basic data type
+var num1 = new Number(-90); //object
+console.log("Number is : "+num1);
+num = true; //boolean
+let number;  //value of number will be undefined
+let arr = [12, -14, -15.6, 16];  // 0 1 2 3
+console.log("First array element is: "+arr[-2]);
+var person = { name:"Shivam Rahar" , age: 26, degree: "B Sc"};
+var person2 = { name:"Rahul Sharma", age:29, degree: "BCA"};
+document.write("Person name is: "+person.name);
+var x=90, y=100;
+document.write("<br>Addition is : "+(x+y));
+/* document.write("value of x : "+(++x)); // pre-increment operator
+document.write("<br>New value of x: "+(x++)); //post-increment
+document.write("<br>x is: "+x); */
+document.write("<br> changed value of x is: "+(x**=2)); // new value of x=8100
+if(x>y)
+{ document.write("<br>x is greater than y");}
+else
+{   document.write("<br>x is less than y");}
+
+for(let i=0; i< arr.length; i++)
+{
+    // arr[0] arr[1] arr[2] arr[3]
+    document.write(i);
+}
+let j =0;
+while(j<4)
+{
+    document.write("value of j : "+j);
+    j++;
+}
+
+do{
+    document.write("<br>value of j : "+j);
+    j++;  
+}
+while(j<4);
+// x= 8100 y=100 z=120
+// logical operators && || !
+let z=120;
+if(x>y || x<z)
+{ document.write("<br>x is the greatest");}
+else { document.write("<br>x is not the greatest number"); }
+
+(x>y) ? console.log("x is greater") : console.log("x is lesser");
+
+//var person = { name:"Shivam Rahar" , age: 26, degree: "B Sc"};
+for (const key in person) {
+    console.log(person[key]); 
+    }
+
+</script>
+</body></html>
